@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0%;
+}
+body{
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width:100%;
+}
+header{
+    width: 100%;
+    height:100px;
+    background-color:#35424a;
+     border-bottom: 3px solid #e8491d ;
+}
+.navbar{
+    max-width: 85%;
+    height:100%;
+    margin-inline:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navbar .logo{
+    color:white;
+}
+.navbar .logo span{
+color: #e8491d;
+font-weight: bold;
+}
+
+.navbar .main-menu ul{
+    display: flex;
+    list-style: none;
+}
+ a{
+  text-decoration: none;
+  color:white;
+}
+.main-menu .home{
+    color: #e8491d ;
+}
+.main-menu .home:hover{
+    color:white;
+}
+
+.navbar .main-menu  a:hover{
+  font-size: 21px;
+}
+.navbar .main-menu li{
+    cursor: pointer;
+    padding-right: 30px;
+}
+.showcase {
+    width:100%;
+    min-height: 400px;
+    background: url("/images/showcase.jpg") no-repeat;
+    background-size:cover ;
+}
+.showcase .container{
+     width: 80%;
+     min-height: 400px;
+     margin:auto;
+     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.showcase .container h1{
+    font-size: 50px;
+    text-align: center;
+}
+.showcase .container p{
+    margin-top: 20px;
+    text-align: center;
+}
+.subscribe{
+  width:100%;
+  min-height:100px;
+   background-color: #35424a;
+}
+.subscribe .container{
+    width: 85%;
+    min-height:100px;
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+.subscribe .container h3{
+ color: white;
+}
+.subscribe .container .email-sub {
+    display: flex;
+}
+.subscribe .container .email-sub #email {
+    width:250px;
+}
+.btn {
+    height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+
+  }
+  .subscribe .container .email-sub .btn {
+   margin-left: 10px;
+}
+.home-cards{
+    width:70%;
+     margin:auto;
+     margin-top: 20px;
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     gap:20px;
+}
+.home-cards .card .card-title {
+font-weight: bold;
+margin-bottom: 10px;
+}
+.home-cards .card p{
+    font-size:small;
+}
+.home-cards .card{
+    
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.home-cards .card-img {
+    margin-bottom: 10px;
+height:90px;
+width:90px;
+}
+.footer{
+    width:100%;
+    height:90px;
+    color:white;
+    background-color: #e8491d;
+    font-size: small;
+    text-align: center;
+    margin-top: 20px ;
+}
+.footer p{
+    padding-top:45px;
+}
+
+@media(max-width:768px){
+    .navbar{
+        padding-top: 10px;
+        display: block;
+    }
+    .navbar .logo{
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .navbar .main-menu ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        transform: translateX(15px);
+    }
+    
+    
+.subscribe .container{
+    flex-direction: column;
+    padding-bottom: 10px;;
+}
+.subscribe .container h3{
+ text-align: center;
+
+}
+.subscribe .container .email-sub {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.subscribe .container form{
+    width:100%;
+}
+.subscribe .container .email-sub #email {
+    margin-top: 10px;
+    width: 100%;
+    height:35px;
+}
+.subscribe .container .email-sub .btn {
+    margin-top: 10px;
+    width: 100%;
+    transform: translateX(-4px);
+}
+.home-cards{
+     grid-template-columns: 1fr;
+     gap:20px;
+}
+}
